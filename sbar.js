@@ -53,8 +53,7 @@ function sbar() {
 
       var interval = TIntervals[TPeriod];
 
-      var x = d3.scale.linear().clamp([true])
-          .rangeRound([0, width]);
+      var x = d3.scale.linear().range([0, width]);
 
       d3.select(this).select("svg").remove();
       var svg = d3.select(this).append("svg")
@@ -70,20 +69,15 @@ function sbar() {
           x.domain([data[index].AURMU - data[index].AURSG*2,
                     data[index].AURMU + data[index].AURSG*2]).nice();
       } else if (sname == "vol") {
-          x.domain([d3.min(data, function(d) { return d.TOPIC1; }), 
-                    d3.max(data, function(d) { return d.TOPIC1; })]).nice();
+          x.domain([0, 100]).nice();
       } else if (sname == "sig") {
-          x.domain([d3.min(data, function(d) { return d.VOLATILITY; }), 
-                    d3.max(data, function(d) { return d.VOLATILITY; })]).nice();
+          x.domain([0, 100]).nice();
       } else if (sname == "top3") {
-          x.domain([d3.min(data, function(d) { return d.TOPIC3; }), 
-                    d3.max(data, function(d) { return d.TOPIC3; })]).nice();
+          x.domain([0, 100]).nice();
       } else if (sname == "top4") {
-          x.domain([d3.min(data, function(d) { return d.TOPIC4; }), 
-                    d3.max(data, function(d) { return d.TOPIC4; })]).nice();
+          x.domain([0, 100]).nice();
       } else if (sname == "top5") {
-          x.domain([d3.min(data, function(d) { return d.TOPIC5; }), 
-                    d3.max(data, function(d) { return d.TOPIC5; })]).nice();
+          x.domain([0, 100]).nice();
       }
 
   
