@@ -58,7 +58,7 @@
   color: white; }
 
 .ocol0 {
-  width: 100px;
+  width: 120px;
   text-align: left; }
 
 .ocol1 {
@@ -72,6 +72,8 @@
 
 .pricev {
   font-size: 200%; }
+
+#link { color: #FFF0FF; }
 
 #volchart {
   width: 300px;
@@ -219,10 +221,10 @@ body {
                 -moz-box-shadow: none;
                 box-shadow: none;
               }
-.subname   { width: 80px; height: 15px; float:left; font-size: x-small; text-align: left; }
+.subname   { width: 80px; height: 15px; float:left; font-size: small; text-align: left; }
 .subchart  { width: 170px; height: 15px; float:left; }
-.subtext   { width: 20px; height: 15px; float:left; font-size: x-small; text-align: left; }
-.subunit   { width: 10px; height: 15px; float:left; font-size: x-small; text-align: left; }
+.subtext   { width: 20px; height: 15px; float:left; font-size: small; text-align: left; }
+.subunit   { width: 10px; height: 15px; float:left; font-size: small; text-align: left; }
 
 #volchart .volbar .volfill { fill: crimson; } 
 #volchart .sigbar .sigfill { fill: crimson; }
