@@ -221,10 +221,10 @@ body {
                 -moz-box-shadow: none;
                 box-shadow: none;
               }
-.subname   { width: 125px; height: 15px; float:left; font-size: small; text-align: left; }
+.subname   { width: 130px; height: 15px; float:left; font-size: small; text-align: left; }
 .subchart  { width: 160px; height: 15px; float:left; }
 .subtext   { width: 20px; height: 15px; float:left; font-size: small; text-align: left; }
-.subunit   { width: 10px; height: 15px; float:left; font-size: small; text-align: left; }
+.subunit   { width: 5px; height: 15px; float:left; font-size: small; text-align: left; }
 
 #volchart .volbar .volfill { fill: crimson; } 
 #volchart .sigbar .sigfill { fill: crimson; }
